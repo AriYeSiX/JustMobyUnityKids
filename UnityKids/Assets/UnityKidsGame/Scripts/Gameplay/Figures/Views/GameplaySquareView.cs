@@ -117,7 +117,6 @@ namespace UnityKids.Gameplay
 
         public override void OnBeginDrag(PointerEventData eventData)
         {
-            Debug.Log("OnBeginDrag");
             _figureService.StartDragCommand.Execute(new StartDragJson(Square.Id ,eventData.position));
             _isDragging = true;
             _image.raycastTarget = false;
