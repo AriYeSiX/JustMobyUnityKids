@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Squares
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 256
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 80
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Standalone
+      m_MaxTextureSize: 256
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 29
+      m_TextureCompression: 1
+      m_CompressionQuality: 80
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 5387638b47e773c4990f1b132ea7813d, type: 3}
+    - {fileID: 2800000, guid: 0146d6b11235e9746bacc3b26322e833, type: 3}
+    - {fileID: 2800000, guid: 06798ba03472a3a43a17a5e9d691d948, type: 3}
+    - {fileID: 2800000, guid: 8457f58f43c9b45499dea00ae5935f2a, type: 3}
+    - {fileID: 2800000, guid: cda56b88dfd7631428b6b1f3ed3984ae, type: 3}
+    - {fileID: 2800000, guid: 2e791b067b072db438277b34169964cc, type: 3}
+    - {fileID: 2800000, guid: 260641db60b2769439b2c37c9a4e399d, type: 3}
+    - {fileID: 2800000, guid: 1ddbdf94618e629419cb5a3c9f60bebc, type: 3}
+    - {fileID: 2800000, guid: 4ce306da018a9d04b86a1245f8e4c4b7, type: 3}
+    - {fileID: 2800000, guid: d742a8d9c9d65e24d9343c7cd893d9a1, type: 3}
+    - {fileID: 2800000, guid: 78d1deadd41f72d41affa905866a3f53, type: 3}
+    - {fileID: 2800000, guid: 8a6a299fe0a946e42b10f4df4851bad2, type: 3}
+    - {fileID: 2800000, guid: 92af1671d2a6d5744ae0cf308401a33a, type: 3}
+    - {fileID: 2800000, guid: 9d7d68cf36623ce44b2fef613461f5a6, type: 3}
+    - {fileID: 2800000, guid: 5a40952fb18739f48bd05e2bba801f3a, type: 3}
+    - {fileID: 2800000, guid: d0cc6eae4b461374b991feb990c25b53, type: 3}
+    - {fileID: 2800000, guid: 92451e302a9f6f74cad82378ca292942, type: 3}
+    - {fileID: 2800000, guid: 7c64814541f65d64199d03f86e654165, type: 3}
+    - {fileID: 2800000, guid: 8194b6b1b69eb7a4c832c306e009661e, type: 3}
+    - {fileID: 2800000, guid: 252a3819828011f4bab2fd4dce4e8a0a, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 92451e302a9f6f74cad82378ca292942: 21300000
+    - 06798ba03472a3a43a17a5e9d691d948: 21300000
+    - 92af1671d2a6d5744ae0cf308401a33a: 21300000
+    - 8194b6b1b69eb7a4c832c306e009661e: 21300000
+    - 0146d6b11235e9746bacc3b26322e833: 21300000
+    - 1ddbdf94618e629419cb5a3c9f60bebc: 21300000
+    - 7c64814541f65d64199d03f86e654165: 21300000
+    - 2e791b067b072db438277b34169964cc: 21300000
+    - cda56b88dfd7631428b6b1f3ed3984ae: 21300000
+    - 252a3819828011f4bab2fd4dce4e8a0a: 21300000
+    - d742a8d9c9d65e24d9343c7cd893d9a1: 21300000
+    - 4ce306da018a9d04b86a1245f8e4c4b7: 21300000
+    - 5387638b47e773c4990f1b132ea7813d: 21300000
+    - 260641db60b2769439b2c37c9a4e399d: 21300000
+    - 78d1deadd41f72d41affa905866a3f53: 21300000
+    - d0cc6eae4b461374b991feb990c25b53: 21300000
+    - 5a40952fb18739f48bd05e2bba801f3a: 21300000
+    - 8457f58f43c9b45499dea00ae5935f2a: 21300000
+    - 8a6a299fe0a946e42b10f4df4851bad2: 21300000
+    - 9d7d68cf36623ce44b2fef613461f5a6: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 92451e302a9f6f74cad82378ca292942, type: 3}
+  - {fileID: 21300000, guid: 06798ba03472a3a43a17a5e9d691d948, type: 3}
+  - {fileID: 21300000, guid: 92af1671d2a6d5744ae0cf308401a33a, type: 3}
+  - {fileID: 21300000, guid: 8194b6b1b69eb7a4c832c306e009661e, type: 3}
+  - {fileID: 21300000, guid: 0146d6b11235e9746bacc3b26322e833, type: 3}
+  - {fileID: 21300000, guid: 1ddbdf94618e629419cb5a3c9f60bebc, type: 3}
+  - {fileID: 21300000, guid: 7c64814541f65d64199d03f86e654165, type: 3}
+  - {fileID: 21300000, guid: 2e791b067b072db438277b34169964cc, type: 3}
+  - {fileID: 21300000, guid: cda56b88dfd7631428b6b1f3ed3984ae, type: 3}
+  - {fileID: 21300000, guid: 252a3819828011f4bab2fd4dce4e8a0a, type: 3}
+  - {fileID: 21300000, guid: d742a8d9c9d65e24d9343c7cd893d9a1, type: 3}
+  - {fileID: 21300000, guid: 4ce306da018a9d04b86a1245f8e4c4b7, type: 3}
+  - {fileID: 21300000, guid: 5387638b47e773c4990f1b132ea7813d, type: 3}
+  - {fileID: 21300000, guid: 260641db60b2769439b2c37c9a4e399d, type: 3}
+  - {fileID: 21300000, guid: 78d1deadd41f72d41affa905866a3f53, type: 3}
+  - {fileID: 21300000, guid: d0cc6eae4b461374b991feb990c25b53, type: 3}
+  - {fileID: 21300000, guid: 5a40952fb18739f48bd05e2bba801f3a, type: 3}
+  - {fileID: 21300000, guid: 8457f58f43c9b45499dea00ae5935f2a, type: 3}
+  - {fileID: 21300000, guid: 8a6a299fe0a946e42b10f4df4851bad2, type: 3}
+  - {fileID: 21300000, guid: 9d7d68cf36623ce44b2fef613461f5a6, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - square17
+  - square3
+  - square13
+  - square19
+  - square2
+  - square8
+  - square18
+  - square6
+  - square5
+  - square20
+  - square10
+  - square9
+  - square1
+  - square7
+  - square11
+  - square16
+  - square15
+  - square4
+  - square12
+  - square14
+  m_RenderDataMap: {}
+  m_Tag: Squares
+  m_IsVariant: 0
