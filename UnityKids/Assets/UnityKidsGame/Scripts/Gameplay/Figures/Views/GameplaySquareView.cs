@@ -84,7 +84,8 @@ namespace UnityKids.Gameplay
             if (figures.Any(x=>x.Id == Square.Id))
             {
                 _moveTween?.Kill();
-                _moveTween = _rectTransform.DOMove(figures.First(x=>x.Id == Square.Id).NewPosition, 1f);
+                _moveTween = _rectTransform.DOMove(figures.First(x=>x.Id == Square.Id).NewPosition, 0.5f);
+                _originalPosition = figures.First(x=>x.Id == Square.Id).NewPosition;
             }
         }
 
@@ -110,17 +111,17 @@ namespace UnityKids.Gameplay
             if (string.Equals(placeJson.Figure.Id, Square.Id))
             {
                 _moveTween?.Kill();
-                _moveTween = _rectTransform.DOMove(placeJson.PlacePosition, 1f).SetEase(Ease.OutFlash);
+                _moveTween = _rectTransform.DOMove(placeJson.PlacePosition, 0.5f).SetEase(Ease.OutFlash);
                 
             }
         }
 
         public override void OnBeginDrag(PointerEventData eventData)
         {
+            _moveTween?.Kill(true);
             _figureService.StartDragCommand.Execute(new StartDragJson(Square.Id ,eventData.position));
             _isDragging = true;
             _image.raycastTarget = false;
-            
             _originalAnchorMin = _rectTransform.anchorMin;
             _originalAnchorMax = _rectTransform.anchorMax;
             _originalPivot = _rectTransform.pivot;
@@ -130,7 +131,7 @@ namespace UnityKids.Gameplay
         public override void OnDrag(PointerEventData eventData)
         {
             if (!_isDragging) return;
-            
+            _animationImage.maskable = false;
             _figureService.DragCommand.Execute(eventData.position);
         }
         
@@ -165,11 +166,9 @@ namespace UnityKids.Gameplay
             }
 
             ResetSquarePosition();
+            
             _image.raycastTarget = true;
-            _figureService.IsDragging.Value = false;
-            _figureService.ActualFigureId.Value = string.Empty;
-            _figureService.DropCommand.Execute(new TryDropJson(eventData.pointerEnter,
-                eventData.pointerCurrentRaycast.worldPosition, Square.Id,_size));
+            _animationImage.maskable = false;
         }
 
         private void ResetSquarePosition()
@@ -227,7 +226,7 @@ namespace UnityKids.Gameplay
             {
                 _moveTween?.Kill();
             }
-            _moveTween = _rectTransform.DOLocalMove(parentLocalPoint, 1f);
+            _moveTween = _rectTransform.DOLocalMove(parentLocalPoint, 0.5f);
         }
         
         public override float GetFigureSize()

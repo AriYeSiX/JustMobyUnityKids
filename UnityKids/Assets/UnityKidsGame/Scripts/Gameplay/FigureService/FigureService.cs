@@ -149,6 +149,7 @@ namespace UnityKids.Gameplay
             }
             
             IsDragging.Value = false;
+            ActualFigureId.Value = string.Empty;
         }
         
         private void TryDropOnZone(TryDropJson tryDropJson)

@@ -68,6 +68,7 @@ namespace UnityKids.Gameplay
         {
             _figureService.StartDragCommand.Execute(new StartDragJson(Square.Id ,eventData.position));
             _isDragging = true;
+            _animationImage.maskable = false;
         }
         
         public override void OnDrag(PointerEventData eventData)
@@ -90,8 +91,7 @@ namespace UnityKids.Gameplay
             _moveTween?.Kill();
             _rectTransform.anchoredPosition = Vector2.zero;
             _animationImage.transform.localScale = _originalScale;
-            
-            _figureService.IsDragging.Value = false;
+            _animationImage.maskable = false;
         }
 
         private void UpdateDraggingState(string id)
@@ -143,7 +143,7 @@ namespace UnityKids.Gameplay
             {
                 _moveTween?.Kill();
             }
-            _moveTween = _rectTransform.DOLocalMove(parentLocalPoint, 1f);
+            _moveTween = _rectTransform.DOLocalMove(parentLocalPoint, 0.5f);
         }
         
         public override float GetFigureSize()
